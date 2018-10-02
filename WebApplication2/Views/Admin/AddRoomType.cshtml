@@ -1,0 +1,27 @@
+﻿@using System.Web.Mvc.Html
+@model WebApplication2.Models.RoomType
+@{
+    ViewBag.Title = "AddRoomType";
+    Layout = "~/Views/Shared/_ContentLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-10">
+        <h2>AddRoomType</h2>
+        @using (Html.BeginForm())
+        {
+            @Html.TextBoxFor(t=>t.Name)
+
+            <button type="submit" value="add" name="Action"
+                    class="btn btn-primary">Добавить</button>
+
+            <button type="submit" value="edit" name="Action"
+                    class="btn btn-primary">Редактировать</button>
+        }
+
+        @Html.ActionLink("На главную", "About", "Home")<br/>
+        <a href="@Url.Action("About", "Home")">Url.Action</a><br />
+        @Url.Action("About", "Home")
+    </div>
+</div>

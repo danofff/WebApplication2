@@ -1,0 +1,34 @@
+﻿@model IEnumerable<WebApplication2.Models.Position>
+
+@{
+    ViewBag.Title = "PositionList";
+    Layout = "~/Views/Shared/_ContentLayout.cshtml";
+}
+
+<h2>PositionList</h2>
+
+<p>
+    @Html.ActionLink("Create New", "AddPosition")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PositionName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PositionName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditPosition", new { id=item.PositionId }) |
+            @Html.ActionLink("Details", "DetailsPosition", new { id=item.PositionId }) |
+            @Html.ActionLink("Delete", "DeletePosition", new { id=item.PositionId })
+        </td>
+    </tr>
+}
+
+</table>

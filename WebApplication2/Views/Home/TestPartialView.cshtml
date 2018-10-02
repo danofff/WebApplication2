@@ -1,0 +1,14 @@
+﻿@using System.Collections
+@using WebApplication2.Models
+@model List<string>
+@{
+
+@*@helper FrutList(IEnumerable listF)
+        {
+foreach (string item in listF)
+{<li>@item</li>}
+         }*@
+}
+
+
+@Html.ClassListFruits(Model.ToArray())

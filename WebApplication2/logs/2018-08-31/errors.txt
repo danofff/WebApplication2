@@ -1,0 +1,14 @@
+2018-08-31 09:47:21.6558|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 09:47:36.2772|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 09:47:39.9512|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 10:55:01.3865|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 11:09:18.3093|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 11:13:32.3006|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 11:15:34.5978|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 11:40:16.6360|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 11:59:25.6307|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 11:59:56.8387|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 12:00:03.9105|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 12:01:16.8570|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 12:26:33.2608|ERROR|WebApplication2.Controllers.HomeController|Test Error
+2018-08-31 12:31:15.9204|ERROR|WebApplication2.Controllers.HomeController|Test Error

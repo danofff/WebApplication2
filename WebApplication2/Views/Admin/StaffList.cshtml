@@ -1,0 +1,46 @@
+﻿@model IEnumerable<WebApplication2.Models.Staff>
+
+@{
+    ViewBag.Title = "StaffList";
+    Layout = "~/Views/Shared/_ContentLayout.cshtml";
+}
+
+<h2>StaffList</h2>
+
+<p>
+    @Html.ActionLink("Create New", "AddStaff")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImageUrl)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditStaff", new { id=item.StaffId }) |
+            @Html.ActionLink("Details", "DetailsStaff", new { id=item.StaffId }) |
+            @Html.ActionLink("Delete", "DeleteStaff", new { id=item.StaffId })
+        </td>
+    </tr>
+}
+
+</table>

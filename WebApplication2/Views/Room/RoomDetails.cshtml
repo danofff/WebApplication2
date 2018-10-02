@@ -1,0 +1,24 @@
+﻿@using WebApplication2.Models
+@model WebApplication2.Models.Room
+@{
+    ViewBag.Title = "RoomDetails";
+    Layout = "~/Views/Shared/_ContentLayout.cshtml";
+}
+<h2>RoomDetails</h2>
+
+
+
+<p>@Model.RoomId</p>
+<h4>Room Facility</h4>
+<div class="room-service">
+    <p>
+        @if (Model.IsFullAC)
+        {
+            @: С кондером
+        }
+    </p>
+    <div class="p-amount">
+        <span>@Model.MaxPersons</span>
+        <span class="count">Per Night</span>
+    </div>
+</div>

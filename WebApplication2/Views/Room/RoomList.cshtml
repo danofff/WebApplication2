@@ -1,0 +1,36 @@
+﻿@using WebApplication2.Models
+@model List<WebApplication2.Models.Room>
+@{
+    ViewBag.Title = "RoomList";
+    Layout = "~/Views/Shared/_ContentLayout.cshtml";
+}
+
+<h2>RoomList</h2>
+
+@foreach (Room room in Model)
+{
+    <div class="room-list">
+        <div class="row">
+            <div class="col-md-5 col-sm-6">
+                <a href="#"><img src="img/room/10.jpg" alt=""></a>
+            </div>
+            <div class="col-md-7 col-sm-6">
+                <div class="room-list-text">
+                    <h3>
+                        @Html.ActionLink("комната №"+ room.RoomTypeId, 
+                                         "RoomDetails",
+                                         "Room",
+                                         new { id = room.RoomId },
+                                         null)
+
+                        @*<a href="#">@room.RoomTypeId</a>*@
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+

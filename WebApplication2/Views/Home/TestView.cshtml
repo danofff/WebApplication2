@@ -1,0 +1,19 @@
+﻿@using System.Collections
+
+@{
+    ViewBag.Title = "TestView";
+    Layout = "~/Views/Shared/_ContentLayout.cshtml";
+    List<string> str = new List<string>();
+    str.Add("test");
+    str.Add("apple");
+    str.Add("red");
+
+
+}
+
+<h2>TestView</h2>
+
+
+    @Html.Partial("TestPartialView", str)
+
+
