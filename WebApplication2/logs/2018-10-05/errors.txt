@@ -1,0 +1,1 @@
+2018-10-05 22:06:01.0570|ERROR|WebApplication2.Controllers.HomeController|Test Error
